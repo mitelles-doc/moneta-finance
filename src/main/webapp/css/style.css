@@ -1,0 +1,347 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000;
+    background-image: url('moneta.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #FFD700;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+    padding: 30px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.form-padrao input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-adicionar {
+    background-color: #000;
+    color: #DCBA41;
+    border: 1px solid #DCBA41;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #000;
+    color: #DCBA41;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid #DCBA41;
+}
+
+.mensagem {
+    color: #fff;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.lista-dados ul {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-dados li {
+    margin: 10px 0;
+    background-color: rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.btn-excluir {
+    background-color: transparent;
+    border: 1px solid #DCBA41;
+    color: #DCBA41;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container input[type="number"],
+.form-container input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #1c1c1c;
+        color: #fff;
+        font-size: 14px;
+}
+.login input[type="email"],
+    input[type="password"] {
+         width: 100%;
+         margin-bottom: 15px;
+         border: 1px solid #ccc;
+         border-radius: 8px;
+         background-color: #1c1c1c;
+         color: #fff;
+         font-size: 14px;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #FFC90A;
+}
+
+.user-icon {
+    margin-right: 8px;
+}
+
+
+h1 {
+    color: goldenrod;
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h2 {
+    color: #8d7e2f;
+    margin-bottom: 24px;
+}
+.menu-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-grid a{
+    display: inline-block;
+    padding: 15px;
+    border: 2px solid #FFD700;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFD700;
+    transition: 0.3s;
+    background-color: #000;
+}
+.menu-grid a:hover{
+    background-color: #FFD700;
+    color: #000;
+}
+.logout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.logout a{
+    color: #FFD700;
+    text-decoration: underline;
+}
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.cadastro-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: goldenrod;
+    margin-bottom: 25px;
+    margin-top: 0;
+
+}
+.botao-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #FFC90A;
+    border: 1px solid #FFC90A;
+    padding: 8px 15px;
+    border-radius: 16px;
+    font-weight: bold;
+}
+button, input[type="submit"], .btn {
+    background-color: #000;
+    border: 2px solid #FFD700;
+    color: #FFD700;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+}
+.botao-cadastrar {
+    background-color: #DCBA41;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.botao-cadastrar:hover {
+   opacity: 0.9;
+}
+.botao-login{
+    background-color: black;
+    color:#FFC90A;
+    padding: 10px 20px;
+    border: 2px solid #FFC90A;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+.botao-login:hover {
+    background-color: #1a1a1a;
+}
+.form-input {
+    background-color: black;
+    color:#FFC90A;
+    padding: 10px 20px;
+    border: 2px solid #FFC90A;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-align: center;
+}
+
+button:hover, input[type="submit"]:hover, .btn:hover {
+    background-color: #FFD700;
+    color: #000;
+    border-color: #FFD700;
+}
+
+
+input[type="text"], input[type="password"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #FFD700;
+    border-radius: 6px;
+    background-color: #111;
+    color: #FFD700;
+}
+
+.message {
+    margin: 15px 0;
+    color: #FFD700;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #FFD700;
+    padding: 10px;
+    text-align: center;
+    color: #FFD700;
+}
+
+th {
+    background-color: #111;
+}
+
+td {
+    background-color: #222;
+}
+
+.add-button {
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px auto;
+    padding: 6px 12px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #FFD700;
+    border: 2px solid #FFD700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.add-button:hover {
+    background-color: #FFD700;
+    color: #000;
+}
+.voltar-button {
+    display: inline-block;
+    background-color: black;
+    color: #DCBA41;
+    border: 2px solid #DCBA41;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.voltar-button:hover {
+    background-color: #DCBA41;
+    color: black;
+}
+
+.sair-button {
+    display: inline-block;
+    background-color: black;
+    color: #DCBA41;
+    border: 2px solid #DCBA41;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
